@@ -711,9 +711,6 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-.form {
-  margin-left: 80px;
-}
 
 .form-subscribe {
   display: flex;
