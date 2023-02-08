@@ -54,21 +54,36 @@
               <use href="./images/icon.svg#close-black"></use>
             </svg>
           </button>
+          <p class="form-topic">
+            Leave your contacts and we will call you back
+          </p>
           <form class="form">
-            <h2 class="form-topic">
-              Leave your contacts and we will call you back
-            </h2>
             <div class="form-field">
               <label for="Name" class="form-label">Name</label>
-              <input type="text" id="Name" class="form-input" autofocus />
+              <div class="input-wrap">
+                <input type="text" id="Name" class="form-input" autofocus />
+                <svg class="input-icon" width="22" height="24">
+                  <use href="./images/icon.svg#person"></use>
+                </svg>
+              </div>
             </div>
             <div class="form-field">
               <label for="Phone" class="form-label">Phone</label>
-              <input type="tel" id="Phone" class="form-input" />
+              <div class="input-wrap">
+                <input type="tel" id="Phone" class="form-input" />
+                <svg class="input-icon" width="22" height="24">
+                  <use href="./images/icon.svg#phone"></use>
+                </svg>
+              </div>
             </div>
             <div class="form-field">
               <label for="Email" class="form-label">Email</label>
-              <input type="Email" id="Email" class="form-input" />
+              <div class="input-wrap">
+                <input type="Email" id="Email" class="form-input" />
+                <svg class="input-icon" width="22" height="24">
+                  <use href="./images/icon.svg#email"></use>
+                </svg>
+              </div>
             </div>
             <div class="form-field comment-form">
               <label for="Comment" class="form-label">Comment</label>
@@ -81,13 +96,28 @@
               ></textarea>
             </div>
             <div>
-              <input type="checkbox" id="Privacy Policy" />
-              <label for="Privacy Policy" class="form-policy"
-                >I accept the terms and conditions of the
-                <a href="">Privacy Policy</a></label
+              <input
+                type="checkbox"
+                id="Privacy Policy"
+                class="visually-hidden"
+                required
+              />
+              <label class="form-policy">
+                <input
+                  type="checkbox"
+                  class="checkbox visually-hidden"
+                  required
+                />
+                <span class="checkbox-icon">
+                  <svg class="checkbox-icon-vector" width="10" height="8">
+                    <use href="./images/icon.svg#Vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="police-link">Privacy Policy</a></label
               >
             </div>
-            <button type="submit" class="button btn-form">Send</button>
+            <button type="submit" class="btn-form">Send</button>
           </form>
         </div>
       </div>
@@ -457,6 +487,20 @@
             </li>
           </ul>
         </div>
+        <form class="form">
+          <p class="topic-subscribe">Subscribe</p>
+          <div class="form-subscribe">
+            <label>
+              <input type="email" placeholder="E-mail" class="emeil-footer" />
+            </label>
+            <button type="submit" class="btn-subscribe">
+              <span class="btn-text">Subscribe</span>
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./images/icon.svg#Frame"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
