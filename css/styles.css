@@ -83,6 +83,10 @@ transform: translate(-50%, -50%) scale(0.7);
   border-radius: 4px;
 }
 
+.form {
+  width: 360px;
+  margin-left: auto;
+}
 
 .form-topic {
   margin-left: auto;
@@ -710,7 +714,7 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-.form {
+.form-footer-subscribe {
   width: 360px;
   margin-left: auto;
   display: flex;
